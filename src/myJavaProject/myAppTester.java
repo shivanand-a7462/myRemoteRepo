@@ -16,7 +16,8 @@ public class myAppTester {
 	  System.out.print("Reverse of the input number is:");
 	  reverseMethod(n);
 	  System.out.println();
-
+	  squareMethod(n);
+	  System.out.println();
 	  // add a line below to call your myTestMethod from here  then remove the block comment symbols  
 
 	}
@@ -30,6 +31,19 @@ public class myAppTester {
 	       else {
 	           System.out.print(num % 10);
 	           reverseMethod(num/10);     // recursive call
+	       }
+	   }
+
+	public static void squareMethod(int num) {
+	       if (num > 0) {
+	    	   int a =0;
+	    	   a = num * num;
+		   System.out.println(a);
+		   return;
+	       }
+	       else {
+	           System.out.print("Number is not greater than 0" );
+	              
 	       }
 	   }
 
